@@ -1,0 +1,35 @@
+# ----------------------------------------------------------
+# GRÁFICOS - UNSTABLE
+# ----------------------------------------------------------
+# 1 - Comente os pacotes que não deseja instalar ou remova
+#     o comentário daqueles que você quer instalar.
+# 2 - Você também pode incluir outros pacotes que não
+#     estejam listados (um pacote por linha).
+# 3 - Salve com Ctrl-S e saia com Ctrl-X para retornar.
+# ----------------------------------------------------------
+
+## Editor de imagens vetoriais
+inkscape
+
+## Editor de imagens
+gimp
+
+## Gerenciamento de fontes
+font-manager
+
+## Fontes MS
+ttf-mscorefonts-installer
+
+## Visualizadores de imagens
+sxiv
+gthumb
+# eog
+# ristretto
+# feh
+
+## Captura de tela (screenshots)
+# xfce4-screenshooter
+# scrot
+
+## Color picker (removido do unstable!)...
+## gcolor2

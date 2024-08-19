@@ -1,0 +1,99 @@
+# ----------------------------------------------------------
+# BASE DO DESKTOP XFCE4 - UNSTABLE
+# ----------------------------------------------------------
+# 1 - Comente os pacotes que não deseja instalar ou remova
+#     o comentário daqueles que você quer instalar.
+# 2 - Você também pode incluir outros pacotes que não
+#     estejam listados (um pacote por linha).
+# 3 - Salve com Ctrl-S e saia com Ctrl-X para retornar.
+# ----------------------------------------------------------
+# ATENÇÃO!
+# ----------------------------------------------------------
+# Alguns destes pacotes são essenciais para as configurações
+# automáticas do ambiente de trabalho! Você pode removê-los,
+# mas poderá ter que completar as configurações finais do
+# seu ambiente de trabalho posteriormente.
+# ----------------------------------------------------------
+
+## Ambiente Xfce4
+xorg
+xfwm4
+lightdm
+lightdm-gtk-greeter
+xfce4-datetime-plugin
+xfce4-genmon-plugin
+xfce4-notifyd
+xfce4-panel
+xfce4-power-manager
+xfce4-pulseaudio-plugin
+xfce4-screenshooter
+xfce4-session
+xfce4-settings
+xfce4-taskmanager
+xfce4-terminal
+xfce4-whiskermenu-plugin
+pulseaudio
+pavucontrol
+policykit-1-gnome
+menulibre
+mugshot
+
+## Menus interativos
+suckless-tools
+rofi
+
+## Lançador alternativo
+gmrun
+
+## Gerenciamento de arquivos...
+pcmanfm
+gvfs-backends
+gvfs-fuse
+xarchiver
+file-roller
+p7zip-full
+rar
+unrar
+
+## Busca de arquivos
+catfish
+
+## Gerenciamento de redes...
+# wicd-gtk
+# wicd-curses
+# wicd-cli
+network-manager
+network-manager-gnome
+
+## Editores...
+geany
+geany-plugins
+vim
+
+## Correção ortográfica...
+aspell
+aspell-pt-br
+
+## Aparência...
+lxappearance
+numix-gtk-theme
+numix-icon-theme
+numix-icon-theme-circle
+papirus-icon-theme
+arc-theme
+breeze-cursor-theme
+fonts-font-awesome
+
+## Informações do sistema
+inxi
+htop
+neofetch
+
+## Ferramentas de controle de janelas...
+wmctrl
+xdotool
+
+## Integração com o shell...
+zenity
+yad
+fzf
