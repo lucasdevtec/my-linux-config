@@ -9,16 +9,16 @@
 # ----------------------------------------------------------
 
 ## Suíte LibreOffice
-libreoffice
-libreoffice-l10n-pt-br
-libreoffice-gnome
-libreoffice-style-breeze
+#libreoffice
+#libreoffice-l10n-pt-br
+#libreoffice-gnome
+#libreoffice-style-breeze
 
 ## Leitor de PDF
-atril
+#atril
 
 ## Ferramentas de PDF para a linha de comando
-poppler-utils
+#poppler-utils
 
 ## Dicionário
 goldendict
@@ -27,4 +27,4 @@ goldendict
 gnome-calculator
 
 ## Editor markdown
-ghostwriter
+#ghostwriter

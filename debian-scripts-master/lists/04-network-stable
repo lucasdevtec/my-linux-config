@@ -19,14 +19,14 @@
 ## Cliente de e-mail...
 # neomutt
 # alpine
-thunderbird
-thunderbird-l10n-pt-br
+#thunderbird
+#thunderbird-l10n-pt-br
 
 ## Torrent...
-# transmission
+transmission
 
 ## Download de vídeos...
-youtube-dl
+#youtube-dl
 
 ## Cliente FTP...
 filezilla

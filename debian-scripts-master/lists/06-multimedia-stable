@@ -9,25 +9,25 @@
 # ----------------------------------------------------------
 
 ## SMPlayer...
-smplayer
-smplayer-l10n
-smplayer-themes
+#smplayer
+#smplayer-l10n
+#smplayer-themes
 
 ## VLC...
 vlc
 vlc-l10n
 
 ## Editor de tags mp3...
-exfalso
+#exfalso
 
 ## Biblioteca de música...
-quodlibet
+#quodlibet
 
 ## Player para a linha de comando...
 moc
 
 ## Conversor de som...
-soundconverter
+#soundconverter
 
 ## Screencasts...
 kazam
@@ -37,20 +37,20 @@ peek
 obs-studio
 
 ## Edição de vídeo...
-kdenlive
-kde-style-breeze
+#kdenlive
+#kde-style-breeze
 
 ## Editor de áudio...
-audacity
+#audacity
 
 ## Editor de partituras...
-musescore-common
+#musescore-common
 
 ## Linux Multimedia Studio...
-lmms
+#lmms
 
 ## Sequenciador de baterias...
-hydrogen
+#hydrogen
 
 ## Estação de produção de áudio...
-ardour
+#ardour

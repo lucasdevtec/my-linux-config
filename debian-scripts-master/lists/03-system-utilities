@@ -23,7 +23,7 @@ lightdm-gtk-greeter-settings
 
 ## Gerenciadores de pacotes...
 synaptic
-gdebi
+#gdebi
 
 ## Gerenciamento de discos...
 gparted

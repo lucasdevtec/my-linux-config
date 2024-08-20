@@ -32,14 +32,14 @@ rofi
 arandr
 
 ## Gerenciamento de arquivos...
-pcmanfm
-gvfs-backends
-gvfs-fuse
-xarchiver
-file-roller
-p7zip-full
-rar
-unrar
+#pcmanfm
+#gvfs-backends
+#gvfs-fuse
+#xarchiver
+#file-roller
+#p7zip-full
+#rar
+#unrar
 
 ## Busca de arquivos...
 catfish
@@ -70,9 +70,9 @@ fonts-font-awesome
 nitrogen
 
 ## Gerenciamento de redes...
-wicd-gtk
-wicd-curses
-wicd-cli
+#wicd-gtk
+#wicd-curses
+#wicd-cli
 # network-manager
 # network-manager-gnome
 
@@ -98,11 +98,11 @@ xfce4-power-manager
 gsimplecal
 
 ## Fixar teclado numérico...
-numlockx
+#numlockx
 
 ## Editores...
-geany
-geany-plugins
+#geany
+#geany-plugins
 vim
 
 ## Correção ortográfica...
