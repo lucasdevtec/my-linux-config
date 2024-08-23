@@ -1,0 +1,13 @@
+# ----------------------------------------------------------
+# PACOTES ESSENCIAIS
+# ----------------------------------------------------------
+# 1 - Comente os pacotes que não deseja instalar ou remova
+#     o comentário daqueles que você quer instalar.
+# 2 - Você também pode incluir outros pacotes que não
+#     estejam listados (um pacote por linha).
+# 3 - Salve com Ctrl-S e saia com Ctrl-X para retornar.
+# ----------------------------------------------------------
+
+build-essential
+curl
+lynx
