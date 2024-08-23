@@ -77,20 +77,13 @@ desktop_settings() {
 #Função para instalar google
 instalar_google() {
     clear
-    ff_launcher="$(pwd)/pool/firefox/firefox-quantum.desktop"
-    echo "$main_title"
-    echo -e "Esta opção instala a última versão do Firefox diretamente da Mozilla.\n"
-    continuar
-    if (($?)); then
-	echo "$instalando"
-	wget -O firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=pt-BR"
-	tar -xvf firefox.tar.bz2
-	sudo mv firefox /opt/
-	rm firefox.tar.bz2
-	sudo ln -s /opt/firefox/firefox /usr/bin/firefox
-	sudo cp $ff_launcher /usr/share/applications/
-	read -p "Tecle 'enter' para continuar... " segue
-    fi
+    echo -e "Baixando Google Chrome do proprio Google:"
+    confirmar
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    echo -e "Instalando o Google Chrome pelo DPKG:"
+    confirmar
+    sudo dpkg -i google-chrome-stable_current_amd64.deb
+
 }
 #Função de Continuar...
 continuar() {
@@ -100,7 +93,7 @@ continuar() {
 
 ##Inicio do script
 #Info
-
+clear
 echo "$line
 SCRIPT DE PÓS-INSTALAÇÃO DO DEBIAN E UBUNTU
 $line
@@ -125,12 +118,11 @@ Agradeço de todo o coração por me apresenter o mundo linux que não conhecia!
 "
 confirmar
 
-
-
-#Nano
-echo -e "Instalando pacote necessario: nano!"
+#Instalando wget e nano
+echo -e "Instalando pacotes necessários: nano, wget, dpkg!"
 confirmar
-sudo apt install nano
+sudo apt update
+sudo apt install nano wget dpkg
 confirmar
 
 while true; do
