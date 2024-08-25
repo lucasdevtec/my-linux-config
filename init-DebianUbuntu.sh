@@ -72,7 +72,35 @@ instalar_pacotes() {
 desktop_settings() {
     clear
     echo -e "Esta opção aplicará as configurações do ambiente i3wm"
-    echo "Ainda não implementado!"
+
+    mkdir -p $HOME/.local
+    cp -R ./pool/bin "$HOME/.local/"
+
+    mkdir -p $HOME/.config
+    cp -R ./config/* $HOME/.config
+
+    for f in ./home/*; do
+        cp -R $f "$HOME/.${f##*/}"
+    done
+
+    echo "Criando pastas do usuário..."
+    xdg-user-dirs-update
+
+    pic_dir=$(xdg-user-dir PICTURES)
+    cp -R ./pool/artwork/wallpapers "$pic_dir"
+
+    sudo cp -R ./pool/artwork/fonts/* /usr/share/fonts/truetype/
+
+    sudo cp -R ./pool/artwork/icons/* /usr/share/icons/
+
+    sudo cp -R $HOME/.config/rofi/themes/* /usr/share/rofi/themes/
+
+    sed -i "s|PIC_DIR|$pic_dir|g" $HOME/.config/nitrogen/nitrogen.cfg
+    sed -i "s|PIC_DIR|$pic_dir|g" $HOME/.config/nitrogen/bg-saved.cfg
+    sed -i "s/USER/$USER/g" $HOME/.gtkrc-2.0
+    sudo sed -i "s/#greeter-hide-users=false/greeter-hide-users=false/" /etc/lightdm/lightdm.conf
+
+
     confirmar
 }
 #Função para instalar google
