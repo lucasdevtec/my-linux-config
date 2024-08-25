@@ -14,6 +14,7 @@ main_menu="Ambiente com I3 - Apenas para DEBIAN e UBUNTU
    8. Gráficos
    9. Desenvolvimento
   10. Virtualização
+  11. Flatpak
 $line
    G. Configuração do ambiente gráfico
    R. Reiniciar a máquina
@@ -78,12 +79,17 @@ desktop_settings() {
 instalar_google() {
     clear
     echo -e "Baixando Google Chrome do proprio Google:"
-    confirmar
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     echo -e "Instalando o Google Chrome pelo DPKG:"
-    confirmar
     sudo dpkg -i google-chrome-stable_current_amd64.deb
-
+}
+#Instalando FLATPAK
+instalar_flatpak(){
+    clear
+    echo -e "Instalando Flatpak:"
+    sudo apt install flatpak
+    echo -e "Adicionando o REPO do Flatpak:"
+    flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 }
 #Função de Continuar...
 continuar() {
@@ -130,7 +136,7 @@ while true; do
 	echo -e "$main_menu\c"
 	read option
 	case $option in
-      0) instalar_pacotes 00-essentials;;
+        0) instalar_pacotes 00-essentials;;
 	    1) instalar_pacotes 01-firmware-non-free;;
 	    2) instalar_pacotes 02-base-desktop-i3wm-stable;;
 	    3) instalar_pacotes 03-system-utilities;;
@@ -140,7 +146,8 @@ while true; do
 	    7) instalar_pacotes 07-escritorio;;
 	    8) instalar_pacotes 08-graficos-stable;;
 	    9) instalar_pacotes 09-desenvolvimento;;
-     10) instalar_pacotes 10-virtualizacao;;
+       10) instalar_pacotes 10-virtualizacao;;
+       11) instalar_flatpak;;
 	 [gG]) desktop_settings;;
 	 [rR]) sudo reboot;;
 	 [qQ]) echo -e "\nSaindo...\n"; exit 0;;
