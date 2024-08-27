@@ -219,6 +219,9 @@ client.unfocused         $darker $darker $darkblue  $cyan      $darker
 client.focused_inactive  $dark   $dark   $darkblue  $cyan      $dark
 client.urgent            $red    $red    $dark      $cyan      $red
 
+# Scripts | Bydkeys
+bindsym $mod+shift+q exec ~/.config/i3/scripts/power1.sh
+bindsym $mod+g exec --no-startup-id google-chrome
 # status bar ----------------------------------------------------------------- #
 
 bar {
