@@ -1,6 +1,6 @@
 ##Declarando Variaveis!
 #Path das listas de pacotes
-pkgs_path="$(pwd)/lists"
+pkgs_path="$(pwd)/listsdeb"
 # Texto do menu principal...
 main_menu="Ambiente com I3 - Apenas para DEBIAN e UBUNTU
    0. Essentials
