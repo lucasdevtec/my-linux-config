@@ -1,0 +1,31 @@
+# ----------------------------------------------------------
+# DESENVOLVIMENTO
+# ----------------------------------------------------------
+# 1 - Comente os pacotes que não deseja instalar ou remova
+#     o comentário daqueles que você quer instalar.
+# 2 - Você também pode incluir outros pacotes que não
+#     estejam listados (um pacote por linha).
+# 3 - Salve com Ctrl-S e saia com Ctrl-X para retornar.
+# ----------------------------------------------------------
+
+## Editores
+# geany
+# geany-plugins
+# vim
+# idle3
+# bluefish
+# emacs
+
+## PHP-CLI
+# php-cli
+# php-fpm
+# php-json
+# php-pdo
+# php-mysql
+# php-zip
+# php-gd
+# php-mbstring
+# php-curl
+# php-xml
+# php-pear
+# php-bcmath
