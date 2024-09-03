@@ -32,12 +32,6 @@ interval=once
 signal=11
 command=~/.config/i3blocks/keyindicator
 
-[volume]
-instance=Master
-interval=once
-command=~/.config/i3blocks/module-volume
-signal=10
-
 [module-calendar]
 interval=60
 command=~/.config/i3blocks/module-calendar

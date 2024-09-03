@@ -45,5 +45,5 @@ ColorSelection=#303036364141
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
 MiscRightClickAction=TERMINAL_RIGHT_CLICK_ACTION_CONTEXT_MENU
-BackgroundDarkness=0.690000
+BackgroundDarkness=0.830000
 
